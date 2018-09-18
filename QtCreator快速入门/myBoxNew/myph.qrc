@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>images/00.jpg</file>
+        <file>images/01.jpg</file>
+        <file>images/02.jpg</file>
+        <file>images/03.jpg</file>
+        <file>images/04.jpg</file>
+        <file>images/05.jpg</file>
+        <file>images/box.gif</file>
+        <file>images/fire.gif</file>
+        <file>images/jiantou.gif</file>
+        <file>images/start.jpg</file>
+        <file>images/yafeilinux.gif</file>
+        <file>images/yafeilinuxMovie.gif</file>
+    </qresource>
+</RCC>

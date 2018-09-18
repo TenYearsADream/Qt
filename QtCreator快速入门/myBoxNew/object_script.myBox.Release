@@ -1,0 +1,12 @@
+INPUT(
+./release\main.o
+./release\mybox.o
+./release\gamearea.o
+./release\myitem.o
+./release\startdlg.o
+./release\myboxaudio.o
+./release\moc_mybox.o
+./release\moc_gamearea.o
+./release\moc_startdlg.o
+./release\qrc_myph.o
+);

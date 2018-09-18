@@ -1,0 +1,12 @@
+INPUT(
+./debug\main.o
+./debug\mybox.o
+./debug\gamearea.o
+./debug\myitem.o
+./debug\startdlg.o
+./debug\myboxaudio.o
+./debug\moc_mybox.o
+./debug\moc_gamearea.o
+./debug\moc_startdlg.o
+./debug\qrc_myph.o
+);
