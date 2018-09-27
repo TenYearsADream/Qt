@@ -12,7 +12,7 @@ ParseBibtex::ParseBibtex(const QString &dirName, QObject *parent)
 }
 
 void ParseBibtex::parse() const {
-  QFile outFile("BIBDATABASE.bib");
+  QFile outFile("refs.bib");
   if (!outFile.open(QFile::WriteOnly | QFile::Text)) {
     qDebug() << "Open BIBDATABASE.bib error.";
   }
