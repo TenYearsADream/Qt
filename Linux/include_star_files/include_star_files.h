@@ -5,7 +5,7 @@
 
 class INCDIR {
  public:
-  INCDIR(QString StRoot = "/home/xiaohai/Github/analysisNote/code/StRoot");
+  INCDIR(QString StRoot = "/home/xiaohai/Github/RHIC-STAR/StRoot");
 
   void print();
 
