@@ -29,11 +29,11 @@ void GenerateProjectFile::run() const {
   }
 
   QTextStream output(&file);
-  output << "HEADERS  += " << '\n';
-  foreach (auto head, headers) { output << "          " << head << '\n'; }
+  output << "HEADERS  += " << "    \\" << '\n';
+  foreach (auto head, headers) { output << "          " << head << "    \\" << '\n'; }
 
   output << "\n\n\n";
 
-  output << "SOURCES  += " << '\n';
-  foreach (auto source, sources) { output << "          " << source << '\n'; }
+  output << "SOURCES  += " << "    \\" << '\n';
+  foreach (auto source, sources) { output << "          " << source << "    \\" << '\n'; }
 }
