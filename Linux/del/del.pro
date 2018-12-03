@@ -7,5 +7,5 @@ SOURCES += \
     del.cpp \
     main.cpp
 
-target.path = /opt/self/install/bin
+target.path = /opt/xiaohai/bin
 INSTALLS += target    
