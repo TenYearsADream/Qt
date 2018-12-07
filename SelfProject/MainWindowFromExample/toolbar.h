@@ -11,61 +11,60 @@ class QSpinBox;
 QT_END_NAMESPACE
 
 class ToolBar : public QToolBar {
-    Q_OBJECT
+  Q_OBJECT
 
-public:
-    explicit ToolBar(const QString& title, QWidget* parent);
+ public:
+  explicit ToolBar(const QString& title, QWidget* parent);
 
-    QMenu* toolbarMenu() const;
+  QMenu* toolbarMenu() const;
 
-private
-slots:
-    void order();
-    void randomize();
-    void addSpinBox();
-    void removeSpinBox();
+ private slots:
+  void order();
+  void randomize();
+  void addSpinBox();
+  void removeSpinBox();
 
-    void changeMovable(bool movable);
+  void changeMovable(bool movable);
 
-    void allowLeft(bool a);
-    void allowRight(bool a);
-    void allowTop(bool a);
-    void allowBottom(bool a);
+  void allowLeft(bool a);
+  void allowRight(bool a);
+  void allowTop(bool a);
+  void allowBottom(bool a);
 
-    void placeLeft(bool p);
-    void placeRight(bool p);
-    void placeTop(bool p);
-    void placeBottom(bool p);
+  void placeLeft(bool p);
+  void placeRight(bool p);
+  void placeTop(bool p);
+  void placeBottom(bool p);
 
-    void updateMenu();
-    void insertToolBarBreak();
+  void updateMenu();
+  void insertToolBarBreak();
 
-private:
-    void allow(Qt::ToolBarArea area, bool allow);
-    void place(Qt::ToolBarArea area, bool place);
+ private:
+  void allow(Qt::ToolBarArea area, bool allow);
+  void place(Qt::ToolBarArea area, bool place);
 
-    QSpinBox* spinBox;
-    QAction* spinBoxAction;
+  QSpinBox* spinBox;
+  QAction* spinBoxAction;
 
-    QMenu* menu;
-    QAction* orderAction;
-    QAction* randomizeAction;
-    QAction* addSpinBoxAction;
-    QAction* removeSpinBoxAction;
+  QMenu* menu;
+  QAction* orderAction;
+  QAction* randomizeAction;
+  QAction* addSpinBoxAction;
+  QAction* removeSpinBoxAction;
 
-    QAction* movableAction;
+  QAction* movableAction;
 
-    QActionGroup* allowedAreaAction;
-    QAction* allowLeftAction;
-    QAction* allowRightAction;
-    QAction* allowTopAction;
-    QAction* allowBottomAction;
+  QActionGroup* allowedAreaAction;
+  QAction* allowLeftAction;
+  QAction* allowRightAction;
+  QAction* allowTopAction;
+  QAction* allowBottomAction;
 
-    QActionGroup* areaAction;
-    QAction* leftAction;
-    QAction* rightAction;
-    QAction* topAction;
-    QAction* bottomAction;
+  QActionGroup* areaAction;
+  QAction* leftAction;
+  QAction* rightAction;
+  QAction* topAction;
+  QAction* bottomAction;
 };
 
-#endif // TOOLBAR_H
+#endif  // TOOLBAR_H
