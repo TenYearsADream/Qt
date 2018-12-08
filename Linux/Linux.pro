@@ -8,4 +8,5 @@ SUBDIRS = del \
   delete_files \
   include_star_files \
   libs_opencv_files \
-  parseBibtex
+  parseBibtex \
+  CopyFile
